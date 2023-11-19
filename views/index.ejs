@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/styles.css" />
+    <title>Shortly</title>
+  </head>
+  <body>
+    <header>
+      <container>
+        <nav class="navbar">
+          <h1 class="hi">Shrortly</h1>
+          <div>
+            <a href="#">Products</a>
+            <a href="#">Pricing</a>
+            <a href="#">Resources</a>
+          </div>
+          <div>
+            <a href="#"> Log In</a>
+            <a href="#"> Sign up Free</a>
+          </div>
+          <div>  <button>Get a Quote</button>  </div>
+        </nav>
+      </container>
+    </header>
+    <main>
+      <container>
+        <h1>Make Every link Short</h1>
+        <p>
+          Create short links,Share them anywhere. Track what's working, and
+          what's not
+        </p>
+
+        <h3>Shorten a long link</h3>
+        <h4>Paste a long URL</h4>
+        <form action="/shortly" method="POST">
+          <input type="text" name="url" placeholder="www.super-long-link.com" />
+          <button type="submit">Get your link</button>
+        </form>
+
+        <% if (locals.id) { %>
+        <li>localhost:8000/shortly/<%= id %></li>
+        <% } %>
+
+        <h5>
+          No Credit Card required. Made for testing and to showcase my skills 😎
+        </h5>
+      </container>
+    </main>
+    <footer>
+      <p>Made by Prashant Kumar Gupta</p>
+      <p>Contact me at:- prashantgupta04627@gmail.com</p>
+      <a href="">My linkedIn Profile </a>
+    </footer>
+  </body>
+</html>
